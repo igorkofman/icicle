@@ -20,11 +20,10 @@ const IcicleChart: React.FC<{
   width: number;
   height: number;
   root: Tree;
-  divisor: number;
   tooltipLabel: (node: NodeRect) => string;
   highlightNode?: (node: NodeRect) => boolean;
-}> = ({ width, height, root, divisor, highlightNode, tooltipLabel }) => {
-  const rectangles = calculateRectangles(root, width, height / divisor);
+}> = ({ width, height, root, highlightNode, tooltipLabel }) => {
+  const rectangles = calculateRectangles(root, width, height);
 
   const categories = uniq(rectangles.map(getCategory));
 
