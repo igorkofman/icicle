@@ -1,0 +1,2302 @@
+[
+    {
+        "name": 0,
+        "children": [
+            {
+                "name": "Personal Taxes",
+                "children": [
+                    {
+                        "name": "Federal income taxes",
+                        "value": 0.0
+                    },
+                    {
+                        "name": "State and local income taxes",
+                        "value": 0.0
+                    },
+                    {
+                        "name": "Other taxes",
+                        "value": 29.5
+                    }
+                ]
+            },
+            {
+                "name": "Savings",
+                "value": -16424.5
+            },
+            {
+                "name": "Average annual expenditures",
+                "children": [
+                    {
+                        "name": "Food",
+                        "children": [
+                            {
+                                "name": "Food at home",
+                                "children": [
+                                    {
+                                        "name": "Cereals and bakery products",
+                                        "children": [
+                                            {
+                                                "name": "Cereals and cereal products",
+                                                "value": 105.5
+                                            },
+                                            {
+                                                "name": "Bakery products",
+                                                "value": 268.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Meats, poultry, fish, and eggs",
+                                        "children": [
+                                            {
+                                                "name": "Beef",
+                                                "value": 155.5
+                                            },
+                                            {
+                                                "name": "Pork",
+                                                "value": 130.5
+                                            },
+                                            {
+                                                "name": "Other meats",
+                                                "value": 73.0
+                                            },
+                                            {
+                                                "name": "Poultry",
+                                                "value": 106.0
+                                            },
+                                            {
+                                                "name": "Fish and seafood",
+                                                "value": 84.5
+                                            },
+                                            {
+                                                "name": "Eggs",
+                                                "value": 43.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dairy products",
+                                        "children": [
+                                            {
+                                                "name": "Fresh milk and cream",
+                                                "value": 99.0
+                                            },
+                                            {
+                                                "name": "Other dairy products",
+                                                "value": 176.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fruits and vegetables",
+                                        "children": [
+                                            {
+                                                "name": "Fresh fruits",
+                                                "value": 176.5
+                                            },
+                                            {
+                                                "name": "Fresh vegetables",
+                                                "value": 165.5
+                                            },
+                                            {
+                                                "name": "Processed fruits",
+                                                "value": 76.0
+                                            },
+                                            {
+                                                "name": "Processed vegetables",
+                                                "value": 94.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Other food at home",
+                                        "children": [
+                                            {
+                                                "name": "Sugar and other sweets",
+                                                "value": 95.0
+                                            },
+                                            {
+                                                "name": "Fats and oils",
+                                                "value": 74.0
+                                            },
+                                            {
+                                                "name": "Miscellaneous foods",
+                                                "value": 548.5
+                                            },
+                                            {
+                                                "name": "Nonalcoholic beverages",
+                                                "value": 296.5
+                                            },
+                                            {
+                                                "name": "Food prepared by consumer unit on out-of-town trips",
+                                                "value": 22.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Food away from home",
+                                "value": 1609.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Alcoholic beverages",
+                        "value": 208.5
+                    },
+                    {
+                        "name": "Housing",
+                        "children": [
+                            {
+                                "name": "Shelter",
+                                "children": [
+                                    {
+                                        "name": "Owned dwellings",
+                                        "children": [
+                                            {
+                                                "name": "Mortgage interest and charges",
+                                                "value": 616.0
+                                            },
+                                            {
+                                                "name": "Property taxes",
+                                                "value": 836.0
+                                            },
+                                            {
+                                                "name": "Maintenance, repairs, insurance, other expenses",
+                                                "value": 996.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Rented dwellings",
+                                        "value": 4224.0
+                                    },
+                                    {
+                                        "name": "Other lodging",
+                                        "value": 341.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Utilities, fuels, and public services",
+                                "children": [
+                                    {
+                                        "name": "Natural gas",
+                                        "value": 259.0
+                                    },
+                                    {
+                                        "name": "Electricity",
+                                        "value": 1049.0
+                                    },
+                                    {
+                                        "name": "Fuel oil and other fuels",
+                                        "value": 69.0
+                                    },
+                                    {
+                                        "name": "Telephone services",
+                                        "children": [
+                                            {
+                                                "name": "Residential phone service, VOIP, and phone cards",
+                                                "value": 185.5
+                                            },
+                                            {
+                                                "name": "Cellular phone service",
+                                                "value": 558.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Water and other public services",
+                                        "value": 392.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household operations",
+                                "children": [
+                                    {
+                                        "name": "Personal services",
+                                        "value": 77.5
+                                    },
+                                    {
+                                        "name": "Other household expenses",
+                                        "value": 557.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Housekeeping supplies",
+                                "children": [
+                                    {
+                                        "name": "Laundry and cleaning supplies",
+                                        "value": 124.5
+                                    },
+                                    {
+                                        "name": "Other household products",
+                                        "value": 220.5
+                                    },
+                                    {
+                                        "name": "Postage and stationery",
+                                        "value": 85.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household furnishings and equipment",
+                                "children": [
+                                    {
+                                        "name": "Household textiles",
+                                        "value": 60.5
+                                    },
+                                    {
+                                        "name": "Furniture",
+                                        "value": 196.0
+                                    },
+                                    {
+                                        "name": "Floor coverings",
+                                        "value": 8.0
+                                    },
+                                    {
+                                        "name": "Major appliances",
+                                        "value": 134.5
+                                    },
+                                    {
+                                        "name": "Small appliances, miscellaneous housewares",
+                                        "value": 55.0
+                                    },
+                                    {
+                                        "name": "Miscellaneous household equipment",
+                                        "value": 488.0
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Apparel and services",
+                        "children": [
+                            {
+                                "name": "Men and boys",
+                                "children": [
+                                    {
+                                        "name": "Men, 16 and over",
+                                        "value": 139.5
+                                    },
+                                    {
+                                        "name": "Boys, 2 to 15",
+                                        "value": 38.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Women and girls",
+                                "children": [
+                                    {
+                                        "name": "Women, 16 and over",
+                                        "value": 252.5
+                                    },
+                                    {
+                                        "name": "Girls, 2 to 15",
+                                        "value": 55.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Children under 2",
+                                "value": 32.5
+                            },
+                            {
+                                "name": "Footwear",
+                                "value": 200.0
+                            },
+                            {
+                                "name": "Other apparel products and services",
+                                "value": 100.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Transportation",
+                        "children": [
+                            {
+                                "name": "Vehicle purchases (net outlay)",
+                                "children": [
+                                    {
+                                        "name": "Cars and trucks, new",
+                                        "value": 669.5
+                                    },
+                                    {
+                                        "name": "Cars and trucks, used",
+                                        "value": 1067.5
+                                    },
+                                    {
+                                        "name": "Other vehicles",
+                                        "value": 10.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Gasoline, other fuels, and motor oil",
+                                "value": 997.5
+                            },
+                            {
+                                "name": "Other vehicle expenses",
+                                "children": [
+                                    {
+                                        "name": "Vehicle finance charges",
+                                        "value": 69.0
+                                    },
+                                    {
+                                        "name": "Maintenance and repairs",
+                                        "value": 427.5
+                                    },
+                                    {
+                                        "name": "Vehicle rental, leases, licenses, and other charges",
+                                        "value": 268.0
+                                    },
+                                    {
+                                        "name": "Vehicle insurance",
+                                        "value": 746.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Public and other transportation",
+                                "value": 327.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Healthcare",
+                        "children": [
+                            {
+                                "name": "Health insurance",
+                                "value": 1971.0
+                            },
+                            {
+                                "name": "Medical services",
+                                "value": 451.5
+                            },
+                            {
+                                "name": "Drugs",
+                                "value": 307.5
+                            },
+                            {
+                                "name": "Medical supplies",
+                                "value": 128.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Entertainment",
+                        "children": [
+                            {
+                                "name": "Fees and admissions",
+                                "value": 156.0
+                            },
+                            {
+                                "name": "Audio and visual equipment and services",
+                                "value": 585.5
+                            },
+                            {
+                                "name": "Pets, toys, hobbies, and playground equipment",
+                                "children": [
+                                    {
+                                        "name": "Pets",
+                                        "value": 251.5
+                                    },
+                                    {
+                                        "name": "Toys, hobbies, and playground equipment",
+                                        "value": 47.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Other entertainment supplies, equipment, and services",
+                                "value": 69.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Personal care products and services",
+                        "value": 363.0
+                    },
+                    {
+                        "name": "Reading",
+                        "value": 60.5
+                    },
+                    {
+                        "name": "Education",
+                        "value": 767.0
+                    },
+                    {
+                        "name": "Tobacco products and smoking supplies",
+                        "value": 299.0
+                    },
+                    {
+                        "name": "Miscellaneous",
+                        "value": 411.5
+                    },
+                    {
+                        "name": "Cash contributions",
+                        "value": 649.0
+                    },
+                    {
+                        "name": "Personal insurance and pensions",
+                        "children": [
+                            {
+                                "name": "Life and other personal insurance",
+                                "value": 147.5
+                            },
+                            {
+                                "name": "Pensions and Social Security",
+                                "value": 471.5
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": 1,
+        "children": [
+            {
+                "name": "Personal Taxes",
+                "children": [
+                    {
+                        "name": "Federal income taxes",
+                        "value": 0.0
+                    },
+                    {
+                        "name": "State and local income taxes",
+                        "value": 233.5
+                    },
+                    {
+                        "name": "Other taxes",
+                        "value": 25.5
+                    }
+                ]
+            },
+            {
+                "name": "Savings",
+                "value": -7524.0
+            },
+            {
+                "name": "Average annual expenditures",
+                "children": [
+                    {
+                        "name": "Food",
+                        "children": [
+                            {
+                                "name": "Food at home",
+                                "children": [
+                                    {
+                                        "name": "Cereals and bakery products",
+                                        "children": [
+                                            {
+                                                "name": "Cereals and cereal products",
+                                                "value": 142.0
+                                            },
+                                            {
+                                                "name": "Bakery products",
+                                                "value": 324.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Meats, poultry, fish, and eggs",
+                                        "children": [
+                                            {
+                                                "name": "Beef",
+                                                "value": 192.5
+                                            },
+                                            {
+                                                "name": "Pork",
+                                                "value": 168.5
+                                            },
+                                            {
+                                                "name": "Other meats",
+                                                "value": 108.0
+                                            },
+                                            {
+                                                "name": "Poultry",
+                                                "value": 168.5
+                                            },
+                                            {
+                                                "name": "Fish and seafood",
+                                                "value": 128.5
+                                            },
+                                            {
+                                                "name": "Eggs",
+                                                "value": 50.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dairy products",
+                                        "children": [
+                                            {
+                                                "name": "Fresh milk and cream",
+                                                "value": 114.0
+                                            },
+                                            {
+                                                "name": "Other dairy products",
+                                                "value": 238.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fruits and vegetables",
+                                        "children": [
+                                            {
+                                                "name": "Fresh fruits",
+                                                "value": 258.5
+                                            },
+                                            {
+                                                "name": "Fresh vegetables",
+                                                "value": 239.5
+                                            },
+                                            {
+                                                "name": "Processed fruits",
+                                                "value": 85.5
+                                            },
+                                            {
+                                                "name": "Processed vegetables",
+                                                "value": 119.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Other food at home",
+                                        "children": [
+                                            {
+                                                "name": "Sugar and other sweets",
+                                                "value": 122.0
+                                            },
+                                            {
+                                                "name": "Fats and oils",
+                                                "value": 92.0
+                                            },
+                                            {
+                                                "name": "Miscellaneous foods",
+                                                "value": 728.5
+                                            },
+                                            {
+                                                "name": "Nonalcoholic beverages",
+                                                "value": 358.0
+                                            },
+                                            {
+                                                "name": "Food prepared by consumer unit on out-of-town trips",
+                                                "value": 36.5
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Food away from home",
+                                "value": 2187.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Alcoholic beverages",
+                        "value": 331.0
+                    },
+                    {
+                        "name": "Housing",
+                        "children": [
+                            {
+                                "name": "Shelter",
+                                "children": [
+                                    {
+                                        "name": "Owned dwellings",
+                                        "children": [
+                                            {
+                                                "name": "Mortgage interest and charges",
+                                                "value": 1003.0
+                                            },
+                                            {
+                                                "name": "Property taxes",
+                                                "value": 1243.0
+                                            },
+                                            {
+                                                "name": "Maintenance, repairs, insurance, other expenses",
+                                                "value": 1206.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Rented dwellings",
+                                        "value": 4839.5
+                                    },
+                                    {
+                                        "name": "Other lodging",
+                                        "value": 409.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Utilities, fuels, and public services",
+                                "children": [
+                                    {
+                                        "name": "Natural gas",
+                                        "value": 354.5
+                                    },
+                                    {
+                                        "name": "Electricity",
+                                        "value": 1351.0
+                                    },
+                                    {
+                                        "name": "Fuel oil and other fuels",
+                                        "value": 101.0
+                                    },
+                                    {
+                                        "name": "Telephone services",
+                                        "children": [
+                                            {
+                                                "name": "Residential phone service, VOIP, and phone cards",
+                                                "value": 198.5
+                                            },
+                                            {
+                                                "name": "Cellular phone service",
+                                                "value": 890.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Water and other public services",
+                                        "value": 528.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household operations",
+                                "children": [
+                                    {
+                                        "name": "Personal services",
+                                        "value": 187.0
+                                    },
+                                    {
+                                        "name": "Other household expenses",
+                                        "value": 751.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Housekeeping supplies",
+                                "children": [
+                                    {
+                                        "name": "Laundry and cleaning supplies",
+                                        "value": 158.0
+                                    },
+                                    {
+                                        "name": "Other household products",
+                                        "value": 328.5
+                                    },
+                                    {
+                                        "name": "Postage and stationery",
+                                        "value": 100.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household furnishings and equipment",
+                                "children": [
+                                    {
+                                        "name": "Household textiles",
+                                        "value": 77.0
+                                    },
+                                    {
+                                        "name": "Furniture",
+                                        "value": 293.5
+                                    },
+                                    {
+                                        "name": "Floor coverings",
+                                        "value": 12.5
+                                    },
+                                    {
+                                        "name": "Major appliances",
+                                        "value": 194.0
+                                    },
+                                    {
+                                        "name": "Small appliances, miscellaneous housewares",
+                                        "value": 68.5
+                                    },
+                                    {
+                                        "name": "Miscellaneous household equipment",
+                                        "value": 512.5
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Apparel and services",
+                        "children": [
+                            {
+                                "name": "Men and boys",
+                                "children": [
+                                    {
+                                        "name": "Men, 16 and over",
+                                        "value": 239.0
+                                    },
+                                    {
+                                        "name": "Boys, 2 to 15",
+                                        "value": 64.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Women and girls",
+                                "children": [
+                                    {
+                                        "name": "Women, 16 and over",
+                                        "value": 376.0
+                                    },
+                                    {
+                                        "name": "Girls, 2 to 15",
+                                        "value": 57.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Children under 2",
+                                "value": 52.5
+                            },
+                            {
+                                "name": "Footwear",
+                                "value": 305.0
+                            },
+                            {
+                                "name": "Other apparel products and services",
+                                "value": 151.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Transportation",
+                        "children": [
+                            {
+                                "name": "Vehicle purchases (net outlay)",
+                                "children": [
+                                    {
+                                        "name": "Cars and trucks, new",
+                                        "value": 1106.0
+                                    },
+                                    {
+                                        "name": "Cars and trucks, used",
+                                        "value": 1579.5
+                                    },
+                                    {
+                                        "name": "Other vehicles",
+                                        "value": 6.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Gasoline, other fuels, and motor oil",
+                                "value": 1601.5
+                            },
+                            {
+                                "name": "Other vehicle expenses",
+                                "children": [
+                                    {
+                                        "name": "Vehicle finance charges",
+                                        "value": 138.0
+                                    },
+                                    {
+                                        "name": "Maintenance and repairs",
+                                        "value": 690.0
+                                    },
+                                    {
+                                        "name": "Vehicle rental, leases, licenses, and other charges",
+                                        "value": 424.0
+                                    },
+                                    {
+                                        "name": "Vehicle insurance",
+                                        "value": 1234.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Public and other transportation",
+                                "value": 381.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Healthcare",
+                        "children": [
+                            {
+                                "name": "Health insurance",
+                                "value": 2715.0
+                            },
+                            {
+                                "name": "Medical services",
+                                "value": 613.0
+                            },
+                            {
+                                "name": "Drugs",
+                                "value": 463.5
+                            },
+                            {
+                                "name": "Medical supplies",
+                                "value": 158.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Entertainment",
+                        "children": [
+                            {
+                                "name": "Fees and admissions",
+                                "value": 262.5
+                            },
+                            {
+                                "name": "Audio and visual equipment and services",
+                                "value": 801.5
+                            },
+                            {
+                                "name": "Pets, toys, hobbies, and playground equipment",
+                                "children": [
+                                    {
+                                        "name": "Pets",
+                                        "value": 522.5
+                                    },
+                                    {
+                                        "name": "Toys, hobbies, and playground equipment",
+                                        "value": 84.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Other entertainment supplies, equipment, and services",
+                                "value": 174.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Personal care products and services",
+                        "value": 552.0
+                    },
+                    {
+                        "name": "Reading",
+                        "value": 62.0
+                    },
+                    {
+                        "name": "Education",
+                        "value": 491.0
+                    },
+                    {
+                        "name": "Tobacco products and smoking supplies",
+                        "value": 327.5
+                    },
+                    {
+                        "name": "Miscellaneous",
+                        "value": 682.0
+                    },
+                    {
+                        "name": "Cash contributions",
+                        "value": 1157.0
+                    },
+                    {
+                        "name": "Personal insurance and pensions",
+                        "children": [
+                            {
+                                "name": "Life and other personal insurance",
+                                "value": 279.0
+                            },
+                            {
+                                "name": "Pensions and Social Security",
+                                "value": 1727.0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": 2,
+        "children": [
+            {
+                "name": "Personal Taxes",
+                "children": [
+                    {
+                        "name": "Federal income taxes",
+                        "value": 2519.0
+                    },
+                    {
+                        "name": "State and local income taxes",
+                        "value": 1093.0
+                    },
+                    {
+                        "name": "Other taxes",
+                        "value": 38.5
+                    }
+                ]
+            },
+            {
+                "name": "Savings",
+                "value": 81.5
+            },
+            {
+                "name": "Average annual expenditures",
+                "children": [
+                    {
+                        "name": "Food",
+                        "children": [
+                            {
+                                "name": "Food at home",
+                                "children": [
+                                    {
+                                        "name": "Cereals and bakery products",
+                                        "children": [
+                                            {
+                                                "name": "Cereals and cereal products",
+                                                "value": 175.0
+                                            },
+                                            {
+                                                "name": "Bakery products",
+                                                "value": 373.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Meats, poultry, fish, and eggs",
+                                        "children": [
+                                            {
+                                                "name": "Beef",
+                                                "value": 259.0
+                                            },
+                                            {
+                                                "name": "Pork",
+                                                "value": 193.0
+                                            },
+                                            {
+                                                "name": "Other meats",
+                                                "value": 130.5
+                                            },
+                                            {
+                                                "name": "Poultry",
+                                                "value": 178.5
+                                            },
+                                            {
+                                                "name": "Fish and seafood",
+                                                "value": 133.5
+                                            },
+                                            {
+                                                "name": "Eggs",
+                                                "value": 58.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dairy products",
+                                        "children": [
+                                            {
+                                                "name": "Fresh milk and cream",
+                                                "value": 134.5
+                                            },
+                                            {
+                                                "name": "Other dairy products",
+                                                "value": 300.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fruits and vegetables",
+                                        "children": [
+                                            {
+                                                "name": "Fresh fruits",
+                                                "value": 305.5
+                                            },
+                                            {
+                                                "name": "Fresh vegetables",
+                                                "value": 282.0
+                                            },
+                                            {
+                                                "name": "Processed fruits",
+                                                "value": 104.5
+                                            },
+                                            {
+                                                "name": "Processed vegetables",
+                                                "value": 148.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Other food at home",
+                                        "children": [
+                                            {
+                                                "name": "Sugar and other sweets",
+                                                "value": 158.5
+                                            },
+                                            {
+                                                "name": "Fats and oils",
+                                                "value": 109.5
+                                            },
+                                            {
+                                                "name": "Miscellaneous foods",
+                                                "value": 873.0
+                                            },
+                                            {
+                                                "name": "Nonalcoholic beverages",
+                                                "value": 453.0
+                                            },
+                                            {
+                                                "name": "Food prepared by consumer unit on out-of-town trips",
+                                                "value": 50.5
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Food away from home",
+                                "value": 3083.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Alcoholic beverages",
+                        "value": 441.0
+                    },
+                    {
+                        "name": "Housing",
+                        "children": [
+                            {
+                                "name": "Shelter",
+                                "children": [
+                                    {
+                                        "name": "Owned dwellings",
+                                        "children": [
+                                            {
+                                                "name": "Mortgage interest and charges",
+                                                "value": 1911.0
+                                            },
+                                            {
+                                                "name": "Property taxes",
+                                                "value": 1559.5
+                                            },
+                                            {
+                                                "name": "Maintenance, repairs, insurance, other expenses",
+                                                "value": 1458.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Rented dwellings",
+                                        "value": 5058.0
+                                    },
+                                    {
+                                        "name": "Other lodging",
+                                        "value": 558.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Utilities, fuels, and public services",
+                                "children": [
+                                    {
+                                        "name": "Natural gas",
+                                        "value": 367.0
+                                    },
+                                    {
+                                        "name": "Electricity",
+                                        "value": 1445.5
+                                    },
+                                    {
+                                        "name": "Fuel oil and other fuels",
+                                        "value": 86.0
+                                    },
+                                    {
+                                        "name": "Telephone services",
+                                        "children": [
+                                            {
+                                                "name": "Residential phone service, VOIP, and phone cards",
+                                                "value": 173.5
+                                            },
+                                            {
+                                                "name": "Cellular phone service",
+                                                "value": 1223.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Water and other public services",
+                                        "value": 596.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household operations",
+                                "children": [
+                                    {
+                                        "name": "Personal services",
+                                        "value": 282.0
+                                    },
+                                    {
+                                        "name": "Other household expenses",
+                                        "value": 914.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Housekeeping supplies",
+                                "children": [
+                                    {
+                                        "name": "Laundry and cleaning supplies",
+                                        "value": 178.0
+                                    },
+                                    {
+                                        "name": "Other household products",
+                                        "value": 421.0
+                                    },
+                                    {
+                                        "name": "Postage and stationery",
+                                        "value": 100.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household furnishings and equipment",
+                                "children": [
+                                    {
+                                        "name": "Household textiles",
+                                        "value": 113.0
+                                    },
+                                    {
+                                        "name": "Furniture",
+                                        "value": 386.0
+                                    },
+                                    {
+                                        "name": "Floor coverings",
+                                        "value": 17.5
+                                    },
+                                    {
+                                        "name": "Major appliances",
+                                        "value": 265.0
+                                    },
+                                    {
+                                        "name": "Small appliances, miscellaneous housewares",
+                                        "value": 102.5
+                                    },
+                                    {
+                                        "name": "Miscellaneous household equipment",
+                                        "value": 859.0
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Apparel and services",
+                        "children": [
+                            {
+                                "name": "Men and boys",
+                                "children": [
+                                    {
+                                        "name": "Men, 16 and over",
+                                        "value": 283.5
+                                    },
+                                    {
+                                        "name": "Boys, 2 to 15",
+                                        "value": 97.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Women and girls",
+                                "children": [
+                                    {
+                                        "name": "Women, 16 and over",
+                                        "value": 503.0
+                                    },
+                                    {
+                                        "name": "Girls, 2 to 15",
+                                        "value": 80.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Children under 2",
+                                "value": 76.5
+                            },
+                            {
+                                "name": "Footwear",
+                                "value": 338.5
+                            },
+                            {
+                                "name": "Other apparel products and services",
+                                "value": 150.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Transportation",
+                        "children": [
+                            {
+                                "name": "Vehicle purchases (net outlay)",
+                                "children": [
+                                    {
+                                        "name": "Cars and trucks, new",
+                                        "value": 1467.5
+                                    },
+                                    {
+                                        "name": "Cars and trucks, used",
+                                        "value": 2479.5
+                                    },
+                                    {
+                                        "name": "Other vehicles",
+                                        "value": 59.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Gasoline, other fuels, and motor oil",
+                                "value": 2079.5
+                            },
+                            {
+                                "name": "Other vehicle expenses",
+                                "children": [
+                                    {
+                                        "name": "Vehicle finance charges",
+                                        "value": 244.5
+                                    },
+                                    {
+                                        "name": "Maintenance and repairs",
+                                        "value": 794.5
+                                    },
+                                    {
+                                        "name": "Vehicle rental, leases, licenses, and other charges",
+                                        "value": 632.5
+                                    },
+                                    {
+                                        "name": "Vehicle insurance",
+                                        "value": 1583.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Public and other transportation",
+                                "value": 509.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Healthcare",
+                        "children": [
+                            {
+                                "name": "Health insurance",
+                                "value": 3255.0
+                            },
+                            {
+                                "name": "Medical services",
+                                "value": 817.0
+                            },
+                            {
+                                "name": "Drugs",
+                                "value": 464.5
+                            },
+                            {
+                                "name": "Medical supplies",
+                                "value": 157.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Entertainment",
+                        "children": [
+                            {
+                                "name": "Fees and admissions",
+                                "value": 423.0
+                            },
+                            {
+                                "name": "Audio and visual equipment and services",
+                                "value": 930.0
+                            },
+                            {
+                                "name": "Pets, toys, hobbies, and playground equipment",
+                                "children": [
+                                    {
+                                        "name": "Pets",
+                                        "value": 580.0
+                                    },
+                                    {
+                                        "name": "Toys, hobbies, and playground equipment",
+                                        "value": 124.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Other entertainment supplies, equipment, and services",
+                                "value": 210.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Personal care products and services",
+                        "value": 707.0
+                    },
+                    {
+                        "name": "Reading",
+                        "value": 90.5
+                    },
+                    {
+                        "name": "Education",
+                        "value": 687.0
+                    },
+                    {
+                        "name": "Tobacco products and smoking supplies",
+                        "value": 368.0
+                    },
+                    {
+                        "name": "Miscellaneous",
+                        "value": 869.0
+                    },
+                    {
+                        "name": "Cash contributions",
+                        "value": 1328.0
+                    },
+                    {
+                        "name": "Personal insurance and pensions",
+                        "children": [
+                            {
+                                "name": "Life and other personal insurance",
+                                "value": 365.0
+                            },
+                            {
+                                "name": "Pensions and Social Security",
+                                "value": 4268.5
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": 3,
+        "children": [
+            {
+                "name": "Personal Taxes",
+                "children": [
+                    {
+                        "name": "Federal income taxes",
+                        "value": 6993.0
+                    },
+                    {
+                        "name": "State and local income taxes",
+                        "value": 2483.0
+                    },
+                    {
+                        "name": "Other taxes",
+                        "value": 58.0
+                    }
+                ]
+            },
+            {
+                "name": "Savings",
+                "value": 12712.5
+            },
+            {
+                "name": "Average annual expenditures",
+                "children": [
+                    {
+                        "name": "Food",
+                        "children": [
+                            {
+                                "name": "Food at home",
+                                "children": [
+                                    {
+                                        "name": "Cereals and bakery products",
+                                        "children": [
+                                            {
+                                                "name": "Cereals and cereal products",
+                                                "value": 206.5
+                                            },
+                                            {
+                                                "name": "Bakery products",
+                                                "value": 454.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Meats, poultry, fish, and eggs",
+                                        "children": [
+                                            {
+                                                "name": "Beef",
+                                                "value": 340.5
+                                            },
+                                            {
+                                                "name": "Pork",
+                                                "value": 192.5
+                                            },
+                                            {
+                                                "name": "Other meats",
+                                                "value": 143.0
+                                            },
+                                            {
+                                                "name": "Poultry",
+                                                "value": 213.0
+                                            },
+                                            {
+                                                "name": "Fish and seafood",
+                                                "value": 151.0
+                                            },
+                                            {
+                                                "name": "Eggs",
+                                                "value": 60.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dairy products",
+                                        "children": [
+                                            {
+                                                "name": "Fresh milk and cream",
+                                                "value": 154.5
+                                            },
+                                            {
+                                                "name": "Other dairy products",
+                                                "value": 344.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fruits and vegetables",
+                                        "children": [
+                                            {
+                                                "name": "Fresh fruits",
+                                                "value": 354.5
+                                            },
+                                            {
+                                                "name": "Fresh vegetables",
+                                                "value": 332.5
+                                            },
+                                            {
+                                                "name": "Processed fruits",
+                                                "value": 121.0
+                                            },
+                                            {
+                                                "name": "Processed vegetables",
+                                                "value": 162.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Other food at home",
+                                        "children": [
+                                            {
+                                                "name": "Sugar and other sweets",
+                                                "value": 181.5
+                                            },
+                                            {
+                                                "name": "Fats and oils",
+                                                "value": 124.0
+                                            },
+                                            {
+                                                "name": "Miscellaneous foods",
+                                                "value": 1082.5
+                                            },
+                                            {
+                                                "name": "Nonalcoholic beverages",
+                                                "value": 509.0
+                                            },
+                                            {
+                                                "name": "Food prepared by consumer unit on out-of-town trips",
+                                                "value": 71.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Food away from home",
+                                "value": 3882.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Alcoholic beverages",
+                        "value": 658.5
+                    },
+                    {
+                        "name": "Housing",
+                        "children": [
+                            {
+                                "name": "Shelter",
+                                "children": [
+                                    {
+                                        "name": "Owned dwellings",
+                                        "children": [
+                                            {
+                                                "name": "Mortgage interest and charges",
+                                                "value": 3487.5
+                                            },
+                                            {
+                                                "name": "Property taxes",
+                                                "value": 2328.0
+                                            },
+                                            {
+                                                "name": "Maintenance, repairs, insurance, other expenses",
+                                                "value": 1916.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Rented dwellings",
+                                        "value": 4478.5
+                                    },
+                                    {
+                                        "name": "Other lodging",
+                                        "value": 876.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Utilities, fuels, and public services",
+                                "children": [
+                                    {
+                                        "name": "Natural gas",
+                                        "value": 455.5
+                                    },
+                                    {
+                                        "name": "Electricity",
+                                        "value": 1587.0
+                                    },
+                                    {
+                                        "name": "Fuel oil and other fuels",
+                                        "value": 120.5
+                                    },
+                                    {
+                                        "name": "Telephone services",
+                                        "children": [
+                                            {
+                                                "name": "Residential phone service, VOIP, and phone cards",
+                                                "value": 178.0
+                                            },
+                                            {
+                                                "name": "Cellular phone service",
+                                                "value": 1535.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Water and other public services",
+                                        "value": 738.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household operations",
+                                "children": [
+                                    {
+                                        "name": "Personal services",
+                                        "value": 555.5
+                                    },
+                                    {
+                                        "name": "Other household expenses",
+                                        "value": 1117.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Housekeeping supplies",
+                                "children": [
+                                    {
+                                        "name": "Laundry and cleaning supplies",
+                                        "value": 190.5
+                                    },
+                                    {
+                                        "name": "Other household products",
+                                        "value": 518.0
+                                    },
+                                    {
+                                        "name": "Postage and stationery",
+                                        "value": 141.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household furnishings and equipment",
+                                "children": [
+                                    {
+                                        "name": "Household textiles",
+                                        "value": 159.0
+                                    },
+                                    {
+                                        "name": "Furniture",
+                                        "value": 635.0
+                                    },
+                                    {
+                                        "name": "Floor coverings",
+                                        "value": 24.0
+                                    },
+                                    {
+                                        "name": "Major appliances",
+                                        "value": 387.5
+                                    },
+                                    {
+                                        "name": "Small appliances, miscellaneous housewares",
+                                        "value": 138.0
+                                    },
+                                    {
+                                        "name": "Miscellaneous household equipment",
+                                        "value": 1049.0
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Apparel and services",
+                        "children": [
+                            {
+                                "name": "Men and boys",
+                                "children": [
+                                    {
+                                        "name": "Men, 16 and over",
+                                        "value": 374.0
+                                    },
+                                    {
+                                        "name": "Boys, 2 to 15",
+                                        "value": 111.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Women and girls",
+                                "children": [
+                                    {
+                                        "name": "Women, 16 and over",
+                                        "value": 740.5
+                                    },
+                                    {
+                                        "name": "Girls, 2 to 15",
+                                        "value": 128.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Children under 2",
+                                "value": 102.5
+                            },
+                            {
+                                "name": "Footwear",
+                                "value": 529.0
+                            },
+                            {
+                                "name": "Other apparel products and services",
+                                "value": 258.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Transportation",
+                        "children": [
+                            {
+                                "name": "Vehicle purchases (net outlay)",
+                                "children": [
+                                    {
+                                        "name": "Cars and trucks, new",
+                                        "value": 2482.0
+                                    },
+                                    {
+                                        "name": "Cars and trucks, used",
+                                        "value": 2721.5
+                                    },
+                                    {
+                                        "name": "Other vehicles",
+                                        "value": 135.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Gasoline, other fuels, and motor oil",
+                                "value": 2593.5
+                            },
+                            {
+                                "name": "Other vehicle expenses",
+                                "children": [
+                                    {
+                                        "name": "Vehicle finance charges",
+                                        "value": 341.0
+                                    },
+                                    {
+                                        "name": "Maintenance and repairs",
+                                        "value": 1023.5
+                                    },
+                                    {
+                                        "name": "Vehicle rental, leases, licenses, and other charges",
+                                        "value": 958.5
+                                    },
+                                    {
+                                        "name": "Vehicle insurance",
+                                        "value": 1857.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Public and other transportation",
+                                "value": 802.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Healthcare",
+                        "children": [
+                            {
+                                "name": "Health insurance",
+                                "value": 4074.5
+                            },
+                            {
+                                "name": "Medical services",
+                                "value": 1232.5
+                            },
+                            {
+                                "name": "Drugs",
+                                "value": 510.5
+                            },
+                            {
+                                "name": "Medical supplies",
+                                "value": 220.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Entertainment",
+                        "children": [
+                            {
+                                "name": "Fees and admissions",
+                                "value": 783.0
+                            },
+                            {
+                                "name": "Audio and visual equipment and services",
+                                "value": 1139.5
+                            },
+                            {
+                                "name": "Pets, toys, hobbies, and playground equipment",
+                                "children": [
+                                    {
+                                        "name": "Pets",
+                                        "value": 789.5
+                                    },
+                                    {
+                                        "name": "Toys, hobbies, and playground equipment",
+                                        "value": 194.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Other entertainment supplies, equipment, and services",
+                                "value": 482.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Personal care products and services",
+                        "value": 897.0
+                    },
+                    {
+                        "name": "Reading",
+                        "value": 93.5
+                    },
+                    {
+                        "name": "Education",
+                        "value": 1189.5
+                    },
+                    {
+                        "name": "Tobacco products and smoking supplies",
+                        "value": 397.0
+                    },
+                    {
+                        "name": "Miscellaneous",
+                        "value": 845.5
+                    },
+                    {
+                        "name": "Cash contributions",
+                        "value": 2176.0
+                    },
+                    {
+                        "name": "Personal insurance and pensions",
+                        "children": [
+                            {
+                                "name": "Life and other personal insurance",
+                                "value": 546.5
+                            },
+                            {
+                                "name": "Pensions and Social Security",
+                                "value": 8105.5
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": 4,
+        "children": [
+            {
+                "name": "Personal Taxes",
+                "children": [
+                    {
+                        "name": "Federal income taxes",
+                        "value": 35036.0
+                    },
+                    {
+                        "name": "State and local income taxes",
+                        "value": 8552.5
+                    },
+                    {
+                        "name": "Other taxes",
+                        "value": 164.5
+                    }
+                ]
+            },
+            {
+                "name": "Savings",
+                "value": 53037.5
+            },
+            {
+                "name": "Average annual expenditures",
+                "children": [
+                    {
+                        "name": "Food",
+                        "children": [
+                            {
+                                "name": "Food at home",
+                                "children": [
+                                    {
+                                        "name": "Cereals and bakery products",
+                                        "children": [
+                                            {
+                                                "name": "Cereals and cereal products",
+                                                "value": 289.0
+                                            },
+                                            {
+                                                "name": "Bakery products",
+                                                "value": 577.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Meats, poultry, fish, and eggs",
+                                        "children": [
+                                            {
+                                                "name": "Beef",
+                                                "value": 403.0
+                                            },
+                                            {
+                                                "name": "Pork",
+                                                "value": 248.0
+                                            },
+                                            {
+                                                "name": "Other meats",
+                                                "value": 190.5
+                                            },
+                                            {
+                                                "name": "Poultry",
+                                                "value": 279.5
+                                            },
+                                            {
+                                                "name": "Fish and seafood",
+                                                "value": 237.0
+                                            },
+                                            {
+                                                "name": "Eggs",
+                                                "value": 81.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Dairy products",
+                                        "children": [
+                                            {
+                                                "name": "Fresh milk and cream",
+                                                "value": 199.0
+                                            },
+                                            {
+                                                "name": "Other dairy products",
+                                                "value": 513.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Fruits and vegetables",
+                                        "children": [
+                                            {
+                                                "name": "Fresh fruits",
+                                                "value": 513.0
+                                            },
+                                            {
+                                                "name": "Fresh vegetables",
+                                                "value": 457.5
+                                            },
+                                            {
+                                                "name": "Processed fruits",
+                                                "value": 174.5
+                                            },
+                                            {
+                                                "name": "Processed vegetables",
+                                                "value": 209.5
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Other food at home",
+                                        "children": [
+                                            {
+                                                "name": "Sugar and other sweets",
+                                                "value": 267.5
+                                            },
+                                            {
+                                                "name": "Fats and oils",
+                                                "value": 174.5
+                                            },
+                                            {
+                                                "name": "Miscellaneous foods",
+                                                "value": 1524.0
+                                            },
+                                            {
+                                                "name": "Nonalcoholic beverages",
+                                                "value": 658.0
+                                            },
+                                            {
+                                                "name": "Food prepared by consumer unit on out-of-town trips",
+                                                "value": 129.5
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Food away from home",
+                                "value": 6853.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Alcoholic beverages",
+                        "value": 1254.5
+                    },
+                    {
+                        "name": "Housing",
+                        "children": [
+                            {
+                                "name": "Shelter",
+                                "children": [
+                                    {
+                                        "name": "Owned dwellings",
+                                        "children": [
+                                            {
+                                                "name": "Mortgage interest and charges",
+                                                "value": 6754.5
+                                            },
+                                            {
+                                                "name": "Property taxes",
+                                                "value": 4811.0
+                                            },
+                                            {
+                                                "name": "Maintenance, repairs, insurance, other expenses",
+                                                "value": 3804.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Rented dwellings",
+                                        "value": 3560.0
+                                    },
+                                    {
+                                        "name": "Other lodging",
+                                        "value": 2608.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Utilities, fuels, and public services",
+                                "children": [
+                                    {
+                                        "name": "Natural gas",
+                                        "value": 643.5
+                                    },
+                                    {
+                                        "name": "Electricity",
+                                        "value": 1923.0
+                                    },
+                                    {
+                                        "name": "Fuel oil and other fuels",
+                                        "value": 189.5
+                                    },
+                                    {
+                                        "name": "Telephone services",
+                                        "children": [
+                                            {
+                                                "name": "Residential phone service, VOIP, and phone cards",
+                                                "value": 220.0
+                                            },
+                                            {
+                                                "name": "Cellular phone service",
+                                                "value": 1880.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Water and other public services",
+                                        "value": 970.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household operations",
+                                "children": [
+                                    {
+                                        "name": "Personal services",
+                                        "value": 1335.0
+                                    },
+                                    {
+                                        "name": "Other household expenses",
+                                        "value": 2059.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Housekeeping supplies",
+                                "children": [
+                                    {
+                                        "name": "Laundry and cleaning supplies",
+                                        "value": 275.0
+                                    },
+                                    {
+                                        "name": "Other household products",
+                                        "value": 799.5
+                                    },
+                                    {
+                                        "name": "Postage and stationery",
+                                        "value": 185.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Household furnishings and equipment",
+                                "children": [
+                                    {
+                                        "name": "Household textiles",
+                                        "value": 245.5
+                                    },
+                                    {
+                                        "name": "Furniture",
+                                        "value": 1090.5
+                                    },
+                                    {
+                                        "name": "Floor coverings",
+                                        "value": 63.0
+                                    },
+                                    {
+                                        "name": "Major appliances",
+                                        "value": 625.0
+                                    },
+                                    {
+                                        "name": "Small appliances, miscellaneous housewares",
+                                        "value": 229.5
+                                    },
+                                    {
+                                        "name": "Miscellaneous household equipment",
+                                        "value": 1991.0
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Apparel and services",
+                        "children": [
+                            {
+                                "name": "Men and boys",
+                                "children": [
+                                    {
+                                        "name": "Men, 16 and over",
+                                        "value": 699.0
+                                    },
+                                    {
+                                        "name": "Boys, 2 to 15",
+                                        "value": 187.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Women and girls",
+                                "children": [
+                                    {
+                                        "name": "Women, 16 and over",
+                                        "value": 1135.0
+                                    },
+                                    {
+                                        "name": "Girls, 2 to 15",
+                                        "value": 191.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Children under 2",
+                                "value": 113.5
+                            },
+                            {
+                                "name": "Footwear",
+                                "value": 719.0
+                            },
+                            {
+                                "name": "Other apparel products and services",
+                                "value": 523.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Transportation",
+                        "children": [
+                            {
+                                "name": "Vehicle purchases (net outlay)",
+                                "children": [
+                                    {
+                                        "name": "Cars and trucks, new",
+                                        "value": 4062.5
+                                    },
+                                    {
+                                        "name": "Cars and trucks, used",
+                                        "value": 4017.5
+                                    },
+                                    {
+                                        "name": "Other vehicles",
+                                        "value": 83.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Gasoline, other fuels, and motor oil",
+                                "value": 3192.0
+                            },
+                            {
+                                "name": "Other vehicle expenses",
+                                "children": [
+                                    {
+                                        "name": "Vehicle finance charges",
+                                        "value": 465.0
+                                    },
+                                    {
+                                        "name": "Maintenance and repairs",
+                                        "value": 1494.0
+                                    },
+                                    {
+                                        "name": "Vehicle rental, leases, licenses, and other charges",
+                                        "value": 1664.0
+                                    },
+                                    {
+                                        "name": "Vehicle insurance",
+                                        "value": 2300.0
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Public and other transportation",
+                                "value": 1875.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Healthcare",
+                        "children": [
+                            {
+                                "name": "Health insurance",
+                                "value": 5618.0
+                            },
+                            {
+                                "name": "Medical services",
+                                "value": 1801.5
+                            },
+                            {
+                                "name": "Drugs",
+                                "value": 683.0
+                            },
+                            {
+                                "name": "Medical supplies",
+                                "value": 305.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Entertainment",
+                        "children": [
+                            {
+                                "name": "Fees and admissions",
+                                "value": 2764.0
+                            },
+                            {
+                                "name": "Audio and visual equipment and services",
+                                "value": 1541.0
+                            },
+                            {
+                                "name": "Pets, toys, hobbies, and playground equipment",
+                                "children": [
+                                    {
+                                        "name": "Pets",
+                                        "value": 1259.0
+                                    },
+                                    {
+                                        "name": "Toys, hobbies, and playground equipment",
+                                        "value": 250.5
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Other entertainment supplies, equipment, and services",
+                                "value": 1004.5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Personal care products and services",
+                        "value": 1409.5
+                    },
+                    {
+                        "name": "Reading",
+                        "value": 153.5
+                    },
+                    {
+                        "name": "Education",
+                        "value": 4063.0
+                    },
+                    {
+                        "name": "Tobacco products and smoking supplies",
+                        "value": 209.5
+                    },
+                    {
+                        "name": "Miscellaneous",
+                        "value": 1681.0
+                    },
+                    {
+                        "name": "Cash contributions",
+                        "value": 4647.0
+                    },
+                    {
+                        "name": "Personal insurance and pensions",
+                        "children": [
+                            {
+                                "name": "Life and other personal insurance",
+                                "value": 1254.5
+                            },
+                            {
+                                "name": "Pensions and Social Security",
+                                "value": 18574.5
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
