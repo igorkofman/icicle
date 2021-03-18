@@ -55,20 +55,20 @@ const IcicleChart: React.FC<{
         {sortBy(rectangles, (item: NodeRect) => isHighlighted(item)).map(
           (item) => {
             // TODO
-            //            if (item.data.name === "All") {
-            //              return "";
-            //            }
+            // if (item.data.name === "All") {
+            //   return "";
+            // }
             console.log(item.data);
             console.log(item.y0);
             console.log(item.x0);
             console.log(item.y1);
             console.log(item.x1);
-            const highligted = isHighlighted(item);
+            const highlighted = isHighlighted(item);
             const rectWidth = item.children
               ? item.y1 - item.y0
               : width - item.y0;
             const rectHeight = item.x1 - item.x0;
-            const showLabel = highligted || rectHeight > 8;
+            const showLabel = highlighted || rectHeight > 8;
             return (
               <Tooltip
                 key={item.data.name}
@@ -81,24 +81,24 @@ const IcicleChart: React.FC<{
                     width={rectWidth}
                     height={rectHeight}
                     fill={isHighlighted(item) ? "white" : rectColor(item)}
-                    fillOpacity={highligted ? 1 : 0.6}
+                    fillOpacity={highlighted ? 1 : 0.6}
                     stroke={rectColor(item)}
                     strokeWidth={0}
                     strokeOpacity={0}
                     transform={
-                      highligted ? `translate(-5, 0) scale(1.05, 3)` : ""
+                      highlighted ? `translate(-5, 0) scale(1.05, 3)` : ""
                     }
-                    filter={highligted ? `url(#${filterId})` : "none"}
+                    filter={highlighted ? `url(#${filterId})` : "none"}
                   />
                   {showLabel && (
                     <g
                       transform={
-                        highligted ? `translate(-5, 0) scale(1.05)` : ""
+                        highlighted ? `translate(-5, 0) scale(1.05)` : ""
                       }
                     >
                       <TextBox
                         width={rectWidth}
-                        height={highligted ? 3 * rectHeight : rectHeight}
+                        height={highlighted ? 3 * rectHeight : rectHeight}
                         text={tooltipLabel(item)}
                       />
                     </g>
