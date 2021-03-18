@@ -58,11 +58,11 @@ const IcicleChart: React.FC<{
             // if (item.data.name === "All") {
             //   return "";
             // }
-            console.log(item.data);
-            console.log(item.y0);
-            console.log(item.x0);
-            console.log(item.y1);
-            console.log(item.x1);
+            // console.log(item.data);
+            // console.log(item.y0);
+            // console.log(item.x0);
+            // console.log(item.y1);
+            // console.log(item.x1);
             const highlighted = isHighlighted(item);
             const rectWidth = item.children
               ? item.y1 - item.y0
