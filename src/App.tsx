@@ -1,30 +1,80 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import IcicleChart from "./IcicleChart";
 import { households, formatCurrency } from "./data";
 import { NodeRect } from "./IcicleChart/utils";
+import Chip from '@material-ui/core/Chip';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import TextField from '@material-ui/core/TextField';
+
+
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+
 
 const tooltipLabel = (node: NodeRect) =>
   `${node.data.name} ${formatCurrency(node.value || 0)}`;
 
+const categories = [{title:"Education", value:"Education"},{title: "Electricity", value: "Education"}];
+
 function App() {
+  const [quintile, setQuintile]  = useState<number>(0);
+  const [value, setValue] = React.useState([]);
+  const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+      setQuintile(event.target.value as number);
+  };
   return (
     <>
-      {households.map((household, idx) => (
-        <div className="container" key={`key-${idx}`}>
-          <h2>{ordinal(idx + 1)} Quintile: Education and Electricity</h2>
-          <IcicleChart
-            width={600}
-            height={600}
-            root={household}
-            divisor={idx === 0 ? 2.5 : 1}
-            highlightNode={(node) =>
-              ["Electricity", "Education"].includes(node.data.name)
-            }
-            tooltipLabel={tooltipLabel}
-          />
-        </div>
-      ))}
+
+
+      <div className="container">
+        <FormControl>
+          <InputLabel>Quintile</InputLabel>
+          <Select
+            value={quintile}
+            onChange={handleChange}
+          >
+            <MenuItem value={0}>Bottom 20%</MenuItem>
+            <MenuItem value={1}>20-40%</MenuItem>
+            <MenuItem value={2}>Middle 20%</MenuItem>
+            <MenuItem value={3}>60%-80%</MenuItem>
+            <MenuItem value={4}>Top 20%</MenuItem>
+          </Select>
+        </FormControl>
+        <Autocomplete
+          multiple
+          value={value}
+          id="tags-standard"
+          options={categories}
+          getOptionLabel={(option:any) => option.title}
+          defaultValue={[]}
+          onChange={(event, newValue) => {
+//            setValue(newValue);
+          }}
+          renderInput={(params: any) => (
+            <TextField
+              {...params}
+              variant="standard"
+              label="Highlighted Categories"
+              placeholder="Highlighted Categories"
+            />
+          )}
+        />
+        <h2>{ordinal(quintile+1)} Quintile: {categories.map(c=>c.title).join(", ")}</h2>
+        <IcicleChart
+          width={600}
+          height={600}
+          root={households[quintile]}
+          divisor= {quintile<=1 ? 2.5 : 1}
+          highlightNode={(node) =>
+            categories.map(c=>c.title).includes(node.data.name)
+          }
+          tooltipLabel={tooltipLabel}
+        />
+      </div>
+
     </>
   );
 }
