@@ -24,7 +24,7 @@ const IcicleChart: React.FC<{
   tooltipLabel: (node: NodeRect) => string;
   highlightNode?: (node: NodeRect) => boolean;
 }> = ({ width, height, root, divisor, highlightNode, tooltipLabel }) => {
-  const rectangles = calculateRectangles(root, width, height/divisor);
+  const rectangles = calculateRectangles(root, width, height / divisor);
 
   const categories = uniq(rectangles.map(getCategory));
 
@@ -42,30 +42,33 @@ const IcicleChart: React.FC<{
   const isHighlighted = (item: NodeRect) =>
     highlightNode ? highlightNode(item) : false;
 
+  const filterId = `shadow-filter`;
+
   return (
     <Container>
       <svg width={width} height={height}>
         <defs>
-          <filter id="shadow">
+          <filter id={filterId}>
             <feDropShadow dx="0" dy="0" stdDeviation="5" />
           </filter>
         </defs>
         {sortBy(rectangles, (item: NodeRect) => isHighlighted(item)).map(
           (item) => {
             // TODO
-//            if (item.data.name === "All") {
-//              return "";
-//            }
-            console.log(item.data)
-            console.log(item.y0)
-            console.log(item.x0)
-            console.log(item.y1)
-            console.log(item.x1)
+            //            if (item.data.name === "All") {
+            //              return "";
+            //            }
+            console.log(item.data);
+            console.log(item.y0);
+            console.log(item.x0);
+            console.log(item.y1);
+            console.log(item.x1);
             const highligted = isHighlighted(item);
             const rectWidth = item.children
               ? item.y1 - item.y0
               : width - item.y0;
             const rectHeight = item.x1 - item.x0;
+            const showLabel = highligted || rectHeight > 8;
             return (
               <Tooltip
                 key={item.data.name}
@@ -73,32 +76,37 @@ const IcicleChart: React.FC<{
                 placement="top"
                 arrow
               >
-                <g transform={`translate(${item.y0-100}, ${item.x0})`}>
+                <g transform={`translate(${item.y0 - 100}, ${item.x0})`}>
                   <StyledRect
-                    $highlighted={isHighlighted(item)}
                     width={rectWidth}
                     height={rectHeight}
-                    fill={isHighlighted(item) ? "white" :  rectColor(item)}
+                    fill={isHighlighted(item) ? "white" : rectColor(item)}
                     fillOpacity={highligted ? 1 : 0.6}
                     stroke={rectColor(item)}
-                    strokeWidth={ 0}
-                    strokeOpacity={ 0}
+                    strokeWidth={0}
+                    strokeOpacity={0}
                     transform={
                       highligted ? `translate(-5, 0) scale(1.05, 3)` : ""
                     }
+                    filter={highligted ? `url(#${filterId})` : "none"}
                   />
-                  <g transform={highligted ? `translate(0, 0) scale(1)` : ""}>
-                    <TextBox
-                      width={rectWidth}
-                      height={rectHeight}
-                      text={tooltipLabel(item)}
-                    />
-                  </g>
+                  {showLabel && (
+                    <g
+                      transform={
+                        highligted ? `translate(-5, 0) scale(1.05)` : ""
+                      }
+                    >
+                      <TextBox
+                        width={rectWidth}
+                        height={highligted ? 3 * rectHeight : rectHeight}
+                        text={tooltipLabel(item)}
+                      />
+                    </g>
+                  )}
                 </g>
               </Tooltip>
             );
           }
-
         )}
       </svg>
     </Container>
