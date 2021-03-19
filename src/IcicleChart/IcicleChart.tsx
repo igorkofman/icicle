@@ -20,11 +20,10 @@ const IcicleChart: React.FC<{
   width: number;
   height: number;
   root: Tree;
-  divisor: number;
   tooltipLabel: (node: NodeRect) => string;
   highlightNode?: (node: NodeRect) => boolean;
-}> = ({ width, height, root, divisor, highlightNode, tooltipLabel }) => {
-  const rectangles = calculateRectangles(root, width, height / divisor);
+}> = ({ width, height, root, highlightNode, tooltipLabel }) => {
+  const rectangles = calculateRectangles(root, width, height);
 
   const categories = uniq(rectangles.map(getCategory));
 
@@ -58,11 +57,11 @@ const IcicleChart: React.FC<{
             // if (item.data.name === "All") {
             //   return "";
             // }
-            console.log(item.data);
-            console.log(item.y0);
-            console.log(item.x0);
-            console.log(item.y1);
-            console.log(item.x1);
+            // console.log(item.data);
+            // console.log(item.y0);
+            // console.log(item.x0);
+            // console.log(item.y1);
+            // console.log(item.x1);
             const highlighted = isHighlighted(item);
             const rectWidth = item.children
               ? item.y1 - item.y0

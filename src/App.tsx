@@ -1,41 +1,37 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./App.css";
 import IcicleChart from "./IcicleChart";
 import { households, formatCurrency } from "./data";
 import { NodeRect } from "./IcicleChart/utils";
-import Chip from '@material-ui/core/Chip';
-import Autocomplete from '@material-ui/lab/Autocomplete';
-import TextField from '@material-ui/core/TextField';
-
-
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import TextField from "@material-ui/core/TextField";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+import { getUniqueCategories } from "./IcicleChart/utils";
 
 const tooltipLabel = (node: NodeRect) =>
   `${node.data.name} ${formatCurrency(node.value || 0)}`;
 
-const categories = [{title:"Education", value:"Education"},{title: "Electricity", value: "Education"}];
-
 function App() {
-  const [quintile, setQuintile]  = useState<number>(0);
-  const [value, setValue] = React.useState([]);
+  const [quintile, setQuintile] = useState<number>(0);
+  const [selectedCategories, setSelectedCategories] = React.useState<string[]>(
+    []
+  );
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-      setQuintile(event.target.value as number);
+    setQuintile(event.target.value as number);
   };
+
+  const root = households[quintile];
+  const categories = getUniqueCategories(root);
+
   return (
     <>
-
-
       <div className="container">
         <FormControl>
           <InputLabel>Quintile</InputLabel>
-          <Select
-            value={quintile}
-            onChange={handleChange}
-          >
+          <Select value={quintile} onChange={handleChange}>
             <MenuItem value={0}>Bottom 20%</MenuItem>
             <MenuItem value={1}>20-40%</MenuItem>
             <MenuItem value={2}>Middle 20%</MenuItem>
@@ -45,13 +41,13 @@ function App() {
         </FormControl>
         <Autocomplete
           multiple
-          value={value}
+          value={selectedCategories}
           id="tags-standard"
           options={categories}
-          getOptionLabel={(option:any) => option.title}
+          getOptionLabel={(option: any) => option}
           defaultValue={[]}
-          onChange={(event, newValue) => {
-//            setValue(newValue);
+          onChange={(event, newSelectedCategories) => {
+            setSelectedCategories(newSelectedCategories);
           }}
           renderInput={(params: any) => (
             <TextField
@@ -62,19 +58,19 @@ function App() {
             />
           )}
         />
-        <h2>{ordinal(quintile+1)} Quintile: {categories.map(c=>c.title).join(", ")}</h2>
+        <h2>
+          {ordinal(quintile + 1)} Quintile: {selectedCategories.join(", ")}
+        </h2>
         <IcicleChart
           width={600}
           height={600}
-          root={households[quintile]}
-          divisor= {quintile<=1 ? 2.5 : 1}
+          root={root}
           highlightNode={(node) =>
-            categories.map(c=>c.title).includes(node.data.name)
+            selectedCategories.map((c) => c).includes(node.data.name)
           }
           tooltipLabel={tooltipLabel}
         />
       </div>
-
     </>
   );
 }
