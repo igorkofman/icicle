@@ -43,7 +43,23 @@ const IcicleChart: React.FC<{
 
   const filterId = `shadow-filter`;
 
+  // collision detection
+  const sortedHighlightedRecs = rectangles.filter(isHighlighted).sort((r1,r2)=>r1.x0-r2.x0);
+  let lastStart = -22;
+  let sumOfHighlighted:number = 0;
+  sortedHighlightedRecs.forEach(r => {
+    if (r.x0 < lastStart + 22) {
+      r.x0 = lastStart + 22;
+    }
+    sumOfHighlighted += (r.value || 0);
+    lastStart=r.x0;
+  })
+  const highlightingSome = sortedHighlightedRecs.length;
+  const aae = rectangles.filter(r => r.data.name==="Average annual expenditures")[0].value;
   return (
+    <>
+    { Math.round(sumOfHighlighted / (aae||0) * 10000)/100 }% of Average annual expenditures
+    <br/><br/>
     <Container>
       <svg width={width} height={height}>
         <defs>
@@ -51,23 +67,20 @@ const IcicleChart: React.FC<{
             <feDropShadow dx="0" dy="0" stdDeviation="5" />
           </filter>
         </defs>
-        {sortBy(rectangles, (item: NodeRect) => isHighlighted(item)).map(
+        {sortBy(rectangles, isHighlighted).map(
           (item) => {
-            // TODO
-            // if (item.data.name === "All") {
-            //   return "";
-            // }
-            // console.log(item.data);
-            // console.log(item.y0);
-            // console.log(item.x0);
-            // console.log(item.y1);
-            // console.log(item.x1);
             const highlighted = isHighlighted(item);
             const rectWidth = item.children
               ? item.y1 - item.y0
               : width - item.y0;
+            if (highlighted) {
+              item.x1 = item.x0 + 22;
+
+            }
+
             const rectHeight = item.x1 - item.x0;
             const showLabel = highlighted || rectHeight > 8;
+
             return (
               <Tooltip
                 key={item.data.name}
@@ -80,24 +93,24 @@ const IcicleChart: React.FC<{
                     width={rectWidth}
                     height={rectHeight}
                     fill={isHighlighted(item) ? "white" : rectColor(item)}
-                    fillOpacity={highlighted ? 1 : 0.6}
+                    fillOpacity={highlighted ? 1 : (highlightingSome? 0.5 : 0.6)}
                     stroke={rectColor(item)}
                     strokeWidth={0}
                     strokeOpacity={0}
                     transform={
-                      highlighted ? `translate(-5, 0) scale(1.05, 3)` : ""
+                      highlighted ? `translate(0, 0) scale(1.05, 1.05)` : ""
                     }
                     filter={highlighted ? `url(#${filterId})` : "none"}
                   />
                   {showLabel && (
                     <g
                       transform={
-                        highlighted ? `translate(-5, 0) scale(1.05)` : ""
+                        highlighted ? `translate(0, 0) scale(1.05)` : ""
                       }
                     >
                       <TextBox
                         width={rectWidth}
-                        height={highlighted ? 3 * rectHeight : rectHeight}
+                        height={rectHeight}
                         text={tooltipLabel(item)}
                       />
                     </g>
@@ -109,6 +122,7 @@ const IcicleChart: React.FC<{
         )}
       </svg>
     </Container>
+    </>
   );
 };
 

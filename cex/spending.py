@@ -36,7 +36,7 @@ def get_quantile_data(quantile):
         except:
           high_mean_cell_value = 0
 
-        mean_value = (max(0, int(low_mean_cell_value)) + max(0, int(high_mean_cell_value)))/2
+        mean_value = (low_mean_cell_value + high_mean_cell_value) / 2
         new_object = mean_value
       else:
         current_indent = label_indent
@@ -45,11 +45,15 @@ def get_quantile_data(quantile):
 
   income_after_taxes = root["Sources of income and personal taxes:"]["Income after taxes"]["Mean"]
   average_annual_expenditures = root["Average annual expenditures"]["Mean"]
-
-  return ( {"Personal Taxes" : root["Sources of income and personal taxes:"]["Personal taxes (contains some imputed values)"],
-          "Savings": {"Mean": income_after_taxes - average_annual_expenditures},
+  savings = income_after_taxes - average_annual_expenditures
+  taxes = root["Sources of income and personal taxes:"]["Personal taxes (contains some imputed values)"]
+  return ( {"Personal Taxes" : taxes if taxes['Mean'] > 0 else {'Mean': '0'} ,
+          "Savings": {"Mean": savings if savings > 0 else 0},
           "Average annual expenditures" : root["Average annual expenditures"],
           })
+
+name_map = {"Fuel oil and other fuels": "Fuel oil, etc",
+          "Gasoline, and motor oil": "Gasoline"}
 
 def d3_ify(data, category_name):
   value = 0
@@ -59,6 +63,8 @@ def d3_ify(data, category_name):
       value = data[key]
     else:
       children.append(d3_ify(data[key], key))
+  if category_name in name_map:
+    category_name = name_map[category_name]
   if len(children):
     return {'name' : category_name, "children": children}
   else:

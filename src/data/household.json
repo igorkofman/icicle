@@ -4,24 +4,11 @@
         "children": [
             {
                 "name": "Personal Taxes",
-                "children": [
-                    {
-                        "name": "Federal income taxes",
-                        "value": 0.0
-                    },
-                    {
-                        "name": "State and local income taxes",
-                        "value": 0.0
-                    },
-                    {
-                        "name": "Other taxes",
-                        "value": 29.5
-                    }
-                ]
+                "value": "0"
             },
             {
                 "name": "Savings",
-                "value": -16424.5
+                "value": 0
             },
             {
                 "name": "Average annual expenditures",
@@ -190,7 +177,7 @@
                                         "value": 1049.0
                                     },
                                     {
-                                        "name": "Fuel oil and other fuels",
+                                        "name": "Fuel oil, etc",
                                         "value": 69.0
                                     },
                                     {
@@ -337,7 +324,7 @@
                                 ]
                             },
                             {
-                                "name": "Gasoline, other fuels, and motor oil",
+                                "name": "Gasoline",
                                 "value": 997.5
                             },
                             {
@@ -464,24 +451,11 @@
         "children": [
             {
                 "name": "Personal Taxes",
-                "children": [
-                    {
-                        "name": "Federal income taxes",
-                        "value": 0.0
-                    },
-                    {
-                        "name": "State and local income taxes",
-                        "value": 233.5
-                    },
-                    {
-                        "name": "Other taxes",
-                        "value": 25.5
-                    }
-                ]
+                "value": "0"
             },
             {
                 "name": "Savings",
-                "value": -7524.0
+                "value": 0
             },
             {
                 "name": "Average annual expenditures",
@@ -650,7 +624,7 @@
                                         "value": 1351.0
                                     },
                                     {
-                                        "name": "Fuel oil and other fuels",
+                                        "name": "Fuel oil, etc",
                                         "value": 101.0
                                     },
                                     {
@@ -797,7 +771,7 @@
                                 ]
                             },
                             {
-                                "name": "Gasoline, other fuels, and motor oil",
+                                "name": "Gasoline",
                                 "value": 1601.5
                             },
                             {
@@ -1110,7 +1084,7 @@
                                         "value": 1445.5
                                     },
                                     {
-                                        "name": "Fuel oil and other fuels",
+                                        "name": "Fuel oil, etc",
                                         "value": 86.0
                                     },
                                     {
@@ -1257,7 +1231,7 @@
                                 ]
                             },
                             {
-                                "name": "Gasoline, other fuels, and motor oil",
+                                "name": "Gasoline",
                                 "value": 2079.5
                             },
                             {
@@ -1570,7 +1544,7 @@
                                         "value": 1587.0
                                     },
                                     {
-                                        "name": "Fuel oil and other fuels",
+                                        "name": "Fuel oil, etc",
                                         "value": 120.5
                                     },
                                     {
@@ -1717,7 +1691,7 @@
                                 ]
                             },
                             {
-                                "name": "Gasoline, other fuels, and motor oil",
+                                "name": "Gasoline",
                                 "value": 2593.5
                             },
                             {
@@ -2030,7 +2004,7 @@
                                         "value": 1923.0
                                     },
                                     {
-                                        "name": "Fuel oil and other fuels",
+                                        "name": "Fuel oil, etc",
                                         "value": 189.5
                                     },
                                     {
@@ -2177,7 +2151,7 @@
                                 ]
                             },
                             {
-                                "name": "Gasoline, other fuels, and motor oil",
+                                "name": "Gasoline",
                                 "value": 3192.0
                             },
                             {
