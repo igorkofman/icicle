@@ -45,14 +45,15 @@ const IcicleChart: React.FC<{
 
   // collision detection
   const sortedHighlightedRecs = rectangles.filter(isHighlighted).sort((r1,r2)=>r1.x0-r2.x0);
-  let lastStart = -22;
+  let lastEnd = 0;
+
   let sumOfHighlighted:number = 0;
   sortedHighlightedRecs.forEach(r => {
-    if (r.x0 < lastStart + 22) {
-      r.x0 = lastStart + 22;
+    if (r.x0 < lastEnd) {
+      r.x0 = lastEnd;
     }
     sumOfHighlighted += (r.value || 0);
-    lastStart=r.x0;
+    lastEnd = r.x0 + Math.max(22, r.x1 -  r.x0);
   })
   const highlightingSome = sortedHighlightedRecs.length;
   const aae = rectangles.filter(r => r.data.name==="Average annual expenditures")[0].value;
@@ -74,8 +75,7 @@ const IcicleChart: React.FC<{
               ? item.y1 - item.y0
               : width - item.y0;
             if (highlighted) {
-              item.x1 = item.x0 + 22;
-
+              item.x1 = item.x0 + Math.max(22, item.x1 -  item.x0);
             }
 
             const rectHeight = item.x1 - item.x0;

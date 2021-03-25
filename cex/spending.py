@@ -7,7 +7,7 @@ ws = wb.active
 start_row = 7
 end_row = 789
 
-def get_quantile_data(quantile):
+def get_decile_data(decile):
   root = {}
   object_at_indent = {0: root}
 
@@ -25,8 +25,8 @@ def get_quantile_data(quantile):
       new_object = {}
       if label_value == "Mean":
         current_indent += 1
-        low_col = chr(65 + 2 + quantile *2)
-        high_col = chr(65 + 3 + quantile *2)
+        low_col = chr(65 + 2 + decile)
+        #high_col = chr(65 + 3 + quantile *2)
         try:
           low_mean_cell_value = int(ws[low_col+str(row)].value)
         except:
@@ -36,7 +36,7 @@ def get_quantile_data(quantile):
         except:
           high_mean_cell_value = 0
 
-        mean_value = (low_mean_cell_value + high_mean_cell_value) / 2
+        mean_value = low_mean_cell_value #(low_mean_cell_value + high_mean_cell_value) / 2
         new_object = mean_value
       else:
         current_indent = label_indent
@@ -53,7 +53,7 @@ def get_quantile_data(quantile):
           })
 
 name_map = {"Fuel oil and other fuels": "Fuel oil, etc",
-          "Gasoline, and motor oil": "Gasoline"}
+          "Gasoline, other fuels, and motor oil": "Gasoline"}
 
 def d3_ify(data, category_name):
   value = 0
@@ -71,7 +71,7 @@ def d3_ify(data, category_name):
     return {'name' : category_name, "value": value }
 
 output = []
-for quantile in range(5):
-  output.append(d3_ify(get_quantile_data(quantile), quantile))
+for decile in range(10):
+  output.append(d3_ify(get_decile_data(decile), decile))
 
 print (json.dumps(output, indent=4))

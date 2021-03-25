@@ -30,13 +30,19 @@ function App() {
     <>
       <div className="container">
         <FormControl>
-          <InputLabel>Quintile</InputLabel>
+          <InputLabel>Percentile</InputLabel>
           <Select value={quintile} onChange={handleChange}>
-            <MenuItem value={0}>Bottom 20%</MenuItem>
-            <MenuItem value={1}>20-40%</MenuItem>
-            <MenuItem value={2}>Middle 20%</MenuItem>
-            <MenuItem value={3}>60%-80%</MenuItem>
-            <MenuItem value={4}>Top 20%</MenuItem>
+            <MenuItem value={0}>0-10th</MenuItem>
+            <MenuItem value={1}>10-20th</MenuItem>
+            <MenuItem value={2}>20-30th</MenuItem>
+            <MenuItem value={3}>30-40th</MenuItem>
+            <MenuItem value={4}>40-50th</MenuItem>
+            <MenuItem value={5}>50-60th</MenuItem>
+            <MenuItem value={6}>60-70th</MenuItem>
+            <MenuItem value={7}>70-80th</MenuItem>
+            <MenuItem value={8}>80-90th</MenuItem>
+            <MenuItem value={9}>90-100th</MenuItem>
+
           </Select>
         </FormControl>
         <Autocomplete
@@ -59,7 +65,7 @@ function App() {
           )}
         />
         <h2>
-          {ordinal(quintile + 1)} Quintile: {selectedCategories.join(", ")}
+          {ordinal(quintile + 1)} Decile: {selectedCategories.join(", ")}
         </h2>
         <IcicleChart
           width={600}
