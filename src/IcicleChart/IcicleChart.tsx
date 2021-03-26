@@ -8,6 +8,30 @@ import TextBox from "./TextBox";
 import { interpolateRainbow } from "d3-scale-chromatic";
 import { scaleOrdinal } from "@visx/scale";
 
+import { useState, useEffect } from 'react';
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
+export function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowDimensions;
+}
 const getCategory = (node: NodeRect) => {
   let d = node;
   while (d.depth > 2) {
@@ -17,12 +41,17 @@ const getCategory = (node: NodeRect) => {
 };
 
 const IcicleChart: React.FC<{
-  width: number;
-  height: number;
+//  width: number;
+//  height: number;
   root: Tree;
   tooltipLabel: (node: NodeRect) => string;
   highlightNode?: (node: NodeRect) => boolean;
-}> = ({ width, height, root, highlightNode, tooltipLabel }) => {
+}> = ({ /*width, height,*/ root, highlightNode, tooltipLabel }) => {
+  let {width, height} = useWindowDimensions();
+  width = width * 0.8;
+  height = height * 0.8;
+  width = width * 6/5;
+  const offset = width / 6;
   const rectangles = calculateRectangles(root, width, height);
 
   const categories = uniq(rectangles.map(getCategory));
@@ -88,7 +117,7 @@ const IcicleChart: React.FC<{
                 placement="top"
                 arrow
               >
-                <g transform={`translate(${item.y0 - 100}, ${item.x0})`}>
+                <g transform={`translate(${item.y0-offset}, ${item.x0})`}>
                   <StyledRect
                     width={rectWidth}
                     height={rectHeight}
@@ -105,7 +134,7 @@ const IcicleChart: React.FC<{
                   {showLabel && (
                     <g
                       transform={
-                        highlighted ? `translate(0, 0) scale(1.05)` : ""
+                        highlighted ? `translate(0, 0) scale(1.05)` : "translate(0,0)"
                       }
                     >
                       <TextBox

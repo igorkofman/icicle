@@ -10,6 +10,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import { getUniqueCategories } from "./IcicleChart/utils";
+import { Box } from "@material-ui/core";
 
 const tooltipLabel = (node: NodeRect) =>
   `${node.data.name} ${formatCurrency(node.value || 0)}`;
@@ -24,11 +25,10 @@ function App() {
   };
 
   const root = households[quintile];
-  const categories = getUniqueCategories(root);
+  const categories = ["ALL ENERGY"].concat(getUniqueCategories(root));
 
   return (
-    <>
-      <div className="container">
+    <Box m={10}>
         <FormControl>
           <InputLabel>Percentile</InputLabel>
           <Select value={quintile} onChange={handleChange}>
@@ -42,7 +42,6 @@ function App() {
             <MenuItem value={7}>70-80th</MenuItem>
             <MenuItem value={8}>80-90th</MenuItem>
             <MenuItem value={9}>90-100th</MenuItem>
-
           </Select>
         </FormControl>
         <Autocomplete
@@ -53,6 +52,11 @@ function App() {
           getOptionLabel={(option: any) => option}
           defaultValue={[]}
           onChange={(event, newSelectedCategories) => {
+            if (newSelectedCategories.indexOf("ALL ENERGY") > -1) {
+              newSelectedCategories = newSelectedCategories.filter(c=>c!=="ALL ENERGY")
+              newSelectedCategories = newSelectedCategories.concat(['Electricity',
+              'Natural gas', 'Fuel oil, etc', 'Gasoline']);
+            }
             setSelectedCategories(newSelectedCategories);
           }}
           renderInput={(params: any) => (
@@ -68,16 +72,13 @@ function App() {
           {ordinal(quintile + 1)} Decile: {selectedCategories.join(", ")}
         </h2>
         <IcicleChart
-          width={600}
-          height={600}
           root={root}
           highlightNode={(node) =>
             selectedCategories.map((c) => c).includes(node.data.name)
           }
           tooltipLabel={tooltipLabel}
         />
-      </div>
-    </>
+    </Box>
   );
 }
 
